@@ -9,71 +9,128 @@ import SwiftUI
 import CloudKit
 
 struct TrackersList: View {
-    
+    @StateObject var viewModel = HabitsViewModel()
+    @StateObject var settingsViewModel = SettingsViewModel()
+
     @State var isShowingNewTrackerView = false
-    
-    @State var habit: Habit = Habit(
-        title: "Water",
-        marks: [
-            Mark(date: createDate(from: "20-11-2023"), value: 1),
-            Mark(date: createDate(from: "19-11-2023"), value: 10),
-            Mark(date: createDate(from: "12-11-2023"), value: 15),
-            Mark(date: createDate(from: "20-09-2023"), value: 2),
-        ],
-        measure: "liters",
-        color: .green
-    )
-
-    func fetchICloudEmail(completion: @escaping (String?) -> Void) {
-        // Acessa o container padrão do iCloud
-        let container = CKContainer.default()
-
-        // Solicita as informações da conta do iCloud
-        container.fetchUserRecordID { recordID, error in
-            if let error = error {
-                print("Erro ao acessar iCloud: \(error)")
-                completion(nil)
-            } else if let recordID = recordID {
-                // Busca o registro público associado ao usuário
-                container.publicCloudDatabase.fetch(withRecordID: recordID) { record, error in
-                    if let error = error {
-                        print("Erro ao buscar registro do usuário: \(error)")
-                        completion(nil)
-                    } else if let email = record?.object(forKey: "email") as? String {
-                        // Retorna o e-mail associado ao iCloud
-                        print(email)
-                        completion(email)
-                    }
-                }
-            }
-        }
-    }
-
+    @State var isShowingMarkView = false
+    @State var isShowingSettingView = false
+    @State var isShowingEditView = false
     
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: false) {
-                VStack {
-                    TrackerView(habit: habit)
+                VStack(spacing: 8) {
+                    if viewModel.isFetching {
+                        HStack {
+                            Spacer()
+                            VStack {
+                                Spacer()
+                                ProgressView()
+                                Spacer()
+                            }
+                            Spacer()
+                        }
+                    } else if !viewModel.habits.isEmpty {
+                        ForEach(viewModel.habits) { habit in
+                            VStack {
+                                HeaderTrackView(habit: habit, editAction: {
+                                    viewModel.selectedHabit = habit
+                                    isShowingEditView = true
+                                })
+                                CalendarView(habit: habit, allDays: generateDateArray(endDay: settingsViewModel.firstDayString.chave))
+                                    .onTapGesture {
+                                        viewModel.selectedHabit = habit
+                                        isShowingMarkView.toggle()
+                                    }
+                            }
+                            .padding(16)
+                            .frame(height: UIScreen.main.bounds.width * 0.425)
+                            .background(hexToColor(hex: habit.color).opacity(0.1))
+                            .overlay(){
+                                RoundedRectangle(cornerRadius: 8)
+                                    .stroke(hexToColor(hex: habit.color).opacity(0.5), lineWidth: 0.5)
+                            }
+                        }
+                    } else {
+                        HStack {
+                            Spacer()
+                            VStack(spacing: 12) {
+                                Spacer()
+                                Image(systemName: "calendar.badge.plus")
+                                    .font(.system(size: 48, weight: .light))
+                                    .foregroundStyle(Color("blackPure"))
+                                Text("List_View_empty_State_title")
+                                    .font(.system(size: 24, weight: .bold))
+                                    .foregroundStyle(Color("blackPure"))
+                                Text("List_View_empty_State_subtitle")
+                                    .font(.system(size: 12, weight: .regular))
+                                    .multilineTextAlignment(.center)
+                                    .foregroundStyle(.gray)
+                                    .frame(width: UIScreen.main.bounds.width * 0.5)
+                                Spacer()
+                            }
+                            .padding(.top, UIScreen.main.bounds.height * 0.3)
+                            Spacer()
+                        }
+                    }
                 }
                 .padding(.horizontal, 16)
             }
-            .navigationTitle("SquareHabits")
+            .refreshable {
+                viewModel.fetchHabits() { result in
+                    viewModel.isFetching = false
+                    switch result {
+                    case .success(let habits):
+                        viewModel.habits = habits
+                    case .failure(let error):
+                        print("Erro: \(error)")
+                    }
+                }
+            }
+            .navigationTitle("Square Habits")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Image(systemName: "plus.circle.fill")
-                        .foregroundStyle(.black)
+                        .foregroundStyle(Color("blackPure"))
                         .onTapGesture {
                             isShowingNewTrackerView.toggle()
+                        }
+                }
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Image(systemName: "gearshape.fill")
+                        .foregroundStyle(Color("blackPure"))
+                        .onTapGesture {
+                            isShowingSettingView.toggle()
                         }
                 }
             }
             .fullScreenCover(isPresented: $isShowingNewTrackerView) {
                 NewTrackerView()
+                    .environmentObject(viewModel)
             }
-            .onAppear{
-                fetchICloudEmail() { result in
-                    print(result)
+            .sheet(isPresented: $isShowingMarkView) {
+                MarkView()
+                    .presentationDetents([.medium])
+                    .environmentObject(viewModel)
+            }
+            .sheet(isPresented: $isShowingSettingView) {
+                SettingsView()
+                    .environmentObject(settingsViewModel)
+            }
+            .navigationDestination(isPresented: $isShowingEditView) {
+                EditView()
+                    .environmentObject(viewModel)
+            }
+        }
+        .onAppear {
+            viewModel.fetchHabits() { result in
+                viewModel.isFetching = false
+                switch result {
+                case .success(let habits):
+                    print("sucesso")
+                case .failure(let error):
+                    print("Erro: \(error)")
                 }
             }
         }

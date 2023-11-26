@@ -1,106 +1,41 @@
 import SwiftUI
 
-struct HabitView: View {
-    var habit: Habit
-    var maxValue: Double
-    var color: Color
+struct CalendarView: View {
+    var habit: Habit!
+    var allDaysToShow: [Date] = []
+    private let totalDays = 182
+    private let daysPerWeek = 7
+    private let weeks = 26
+    private var maxOpacity: Double = 0.0
+    private var color: Color = .black
     
-    private let columns = [GridItem(.flexible())]
+    init(habit: Habit? = nil, allDays: [Date]) {
+        self.habit = habit
+        self.allDaysToShow = allDays
+        self.maxOpacity = habit!.maxMarkValue(habit: habit!)
+        self.color = hexToColor(hex: habit?.color ?? "000000")
+    }
     
     var body: some View {
-        HStack(spacing: 0) {
-            ForEach(0..<habit.marks.count, id: \.self) { index in
-                VStack(spacing: 2) {
-                    ForEach(0..<7) { row in
-                        if index * 7 + row < habit.marks.count {
-                            DayMarkView(dayTrack: habit.marks[index * 7 + row], opacity: habit.marks[index * 7 + row].value * 1 / maxValue, color: color)
+        GeometryReader { geometry in
+            HStack(spacing: 2) {
+                ForEach(0..<weeks, id: \.self) { weekIndex in
+                    VStack(spacing: 2) {
+                        ForEach(0..<daysPerWeek) { dayIndex in
+                            let dayNumber = weekIndex * daysPerWeek + dayIndex
+                            let actualDay = allDaysToShow[dayNumber]
+                            
+                            let dayToShow = findMark(in: habit.marks, matching: actualDay)
+                            let actualOpacity = (dayToShow?.value ?? 0.0) * 1.0 / maxOpacity
+                            let isSameDay = isToday(formatDateToString(actualDay))
+                            
+                            let widthSquare = geometry.size.width * 0.0325
+                            
+                            TrackDayView(actualOpacity: actualOpacity, color: color, actualDay: actualDay, width: widthSquare)
                         }
                     }
-                    
                 }
             }
         }
-    }
-}
-
-struct DayMarkView: View {
-    var dayTrack: Mark
-    var opacity: Double
-    var color: Color
-    
-    var body: some View {
-        VStack {
-            RoundedRectangle(cornerRadius: 4)
-                .frame(width: 10, height: 10)
-                .foregroundStyle(opacity == 0.0 ? .white : color.opacity(opacity))
-        }
-    }
-}
-
-private let dayFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateFormat = "d"
-    return formatter
-}()
-
-struct TrackerView: View {
-    
-    @State private var habit: Habit
-    @State private var maxValue: Double
-    
-    init(habit: Habit){
-        self.habit = habit
-        self.maxValue = Double(habit.maxDayTrackValue())
-    }
-    
-    var body: some View {
-        VStack {
-            HStack {
-                Text(habit.title)
-                    .foregroundStyle(.black)
-                    .font(.system(size: 12, weight: .regular))
-                    .multilineTextAlignment(.leading)
-                Spacer()
-                Image(systemName: "pencil.circle")
-                    .foregroundStyle(.black)
-                    .font(.system(size: 12, weight: .regular))
-            }
-            Divider()
-            ScrollView(.horizontal, showsIndicators: false) {
-                HabitView(habit: fillMissingDays(for: &habit), maxValue: maxValue, color: habit.color)
-            }.rotationEffect(Angle(degrees: 180.0))
-        }
-        .padding(16)
-        .background(habit.color.opacity(0.05))
-        .clipShape(RoundedRectangle(cornerRadius: 8))
-        .overlay(
-            RoundedRectangle(cornerRadius: 10)
-                .stroke(habit.color.opacity(0.1), lineWidth: 1)
-        )
-    }
-    
-    // Modifica a função para retornar o Habit preenchido
-    func fillMissingDays(for habit: inout Habit) -> Habit {
-        let calendar = Calendar.current
-        
-        guard let startDate = calendar.date(byAdding: .day, value: -363, to: Date()) else { return habit }
-        
-        var allDates = Set<Date>()
-        for dayOffset in 0...363 {
-            if let date = calendar.date(byAdding: .day, value: dayOffset, to: startDate) {
-                allDates.insert(calendar.startOfDay(for: date))
-            }
-        }
-        
-        for mark in habit.marks {
-            allDates.remove(calendar.startOfDay(for: mark.date))
-        }
-        
-        for date in allDates {
-            habit.marks.append(Mark(date: date, value: 0))
-        }
-        
-        habit.marks.sort { $0.date > $1.date }
-        return habit
     }
 }

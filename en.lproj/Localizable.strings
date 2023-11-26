@@ -1,0 +1,59 @@
+/* 
+  Localizable.strings
+  SquareHabitsTracker
+
+  Created by Marcelo Diefenbach on 26/11/23.
+  
+*/
+
+//MARK: - Trackers List
+"Square Habits" = "Square Habits";
+
+//MARK: - Trackers List Empty
+"List_View_empty_State_title" = "Empty list";
+"List_View_empty_State_subtitle" = "Create your first habit to start tracking";
+
+//MARK: - Settings View
+"Sunday" = "Sunday";
+"Monday" = "Monday";
+"First day of week" = "First day of the week";
+"Set what is the firs day" = "Set the first day";
+"PRO FEATURES" = "PRO FEATURES";
+"Unlock PRO" = "Unlock PRO";
+"Get all PRO features" = "Get all PRO features";
+"VIEW SETTINGS" = "DISPLAY SETTINGS";
+
+//MARK: - Create View
+"Cancel" = "Cancel";
+"NewHabit" = "New habit";
+"Create" = "Create";
+"Habit name" = "Title of habit";
+"Tap to change the emoji" = "Click to change emoji";
+"Tap to change" = "Click to change";
+"Blue" = "Bluew";
+"Red" = "Red";
+"Orange" = "Orange";
+"Green" = "Green";
+"Cyan" = "Cyan";
+"Pink" = "Pink";
+"Indigo" = "Indigo";
+
+//MARK: - Mark View
+"Mark" = "Mark";
+
+//MARK: - Login View
+"LoginView_title_view" = "Let's save your data";
+"LoginView_subtitle_view" = "We save your habits with your e-mail to you access in other devices";
+"LoginView_sign_in_button" = "Sign in with Apple";
+"LoginView_title_error_lable" = "Login Error";
+"LoginView_subtitle_error_label" = "You need to login with iCloud to save your data.";
+"LoginView_ok_button_error_label" = "Ok";
+
+//MARK: - Edit View
+"EditView_done_button" = "Done";
+"EditView_coming_soon_label" = "New editing options coming soon";
+"EditView_delete_button_label" = "Delete habit";
+"Edit_delete_alert_title" = "Delete habit";
+"Edit_delete_alert_message" = "Are you sure you want to delete? This action cannot be undone";
+"Edit_delete_cancel_button" = "Cancel";
+"Edit_delete_confirm_button" = "To switch off";

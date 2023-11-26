@@ -10,9 +10,10 @@ import SwiftData
 
 @main
 struct SquareHabitsTrackerApp: App {
+
     var body: some Scene {
         WindowGroup {
-            TrackersList()
+            LoginView(isAuthenticated: UserDefaults.standard.string(forKey: "userCredential") ?? "no")
         }
     }
 }

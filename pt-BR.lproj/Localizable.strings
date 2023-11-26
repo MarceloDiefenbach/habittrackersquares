@@ -1,0 +1,59 @@
+/* 
+  Localizable.strings
+  SquareHabitsTracker
+
+  Created by Marcelo Diefenbach on 26/11/23.
+  
+*/
+
+//MARK: - Trackers List
+"Square Habits" = "Square Habits";
+
+//MARK: - Trackers List Empty
+"List_View_empty_State_title" = "Lista vazia";
+"List_View_empty_State_subtitle" = "Crie seu primeiro hábito para começar a acompanhar";
+
+//MARK: - Settings View
+"Sunday" = "Domingo";
+"Monday" = "Segunda";
+"First day of week" = "Primeiro dia da semana";
+"Set what is the firs day" = "Defina o primeiro dia";
+"PRO FEATURES" = "FUNCIONALIDADES PRO";
+"Unlock PRO" = "Desbloqueie o PRO";
+"Get all PRO features" = "Tenha todas as funcionalidades PRO";
+"VIEW SETTINGS" = "CONFIGURAÇÕES DE VISUALIZAÇÃO";
+
+//MARK: - Create View
+"Cancel" = "Cancelar";
+"NewHabit" = "Novo hábito";
+"Create" = "Criar";
+"Habit name" = "Título do hábito";
+"Tap to change the emoji" = "Clique para trocar o emoji";
+"Tap to change" = "Clique para alterar";
+"Blue" = "Azul";
+"Red" = "Vermelho";
+"Orange" = "Laranja";
+"Green" = "Verde";
+"Cyan" = "Ciano";
+"Pink" = "Rosa";
+"Indigo" = "Roxo";
+
+//MARK: - Mark View
+"Mark" = "Marque";
+
+//MARK: - Login View
+"LoginView_title_view" = "Vamos salvar seus dados";
+"LoginView_subtitle_view" = "Salvamos seus hábitos com seu e-mail para você acessar em outros dispositivos";
+"LoginView_sign_in_button" = "Login com a Apple";
+"LoginView_title_error_lable" = "Erro de login";
+"LoginView_subtitle_error_label" = "Você precisa fazer login com iCloud para salvar seus dados.";
+"LoginView_ok_button_error_label" = "OK";
+
+//MARK: - Edit View
+"EditView_done_button" = "Feito";
+"EditView_coming_soon_label" = "Em breve novas opções de edição";
+"EditView_delete_button_label" = "Apagar hábito";
+"Edit_delete_alert_title" = "Apagar hábito";
+"Edit_delete_alert_message" = "Tem certeza que quer apagar? Essa ação não poderá ser desfeita";
+"Edit_delete_cancel_button" = "Cancelar";
+"Edit_delete_confirm_button" = "Apagar";

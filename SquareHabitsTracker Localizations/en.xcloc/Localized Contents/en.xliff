@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="InfoPlist.xcstrings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0.1" build-num="15A507"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>Square Habits Track</source>
+        <target state="new">Square Habits Track</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>SquareHabitsTracker</source>
+        <target state="new">SquareHabitsTracker</target>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Localizable.xcstrings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="15.0.1" build-num="15A507"/>
+    </header>
+    <body>
+      <trans-unit id="%lld" xml:space="preserve">
+        <source>%lld</source>
+        <target state="new">%lld</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="+" xml:space="preserve">
+        <source>+</source>
+        <target state="new">+</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="-" xml:space="preserve">
+        <source>-</source>
+        <target state="new">-</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Blue" xml:space="preserve">
+        <source>Blue</source>
+        <target state="new">Blue</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Cancel" xml:space="preserve">
+        <source>Cancel</source>
+        <target state="new">Cancel</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Color" xml:space="preserve">
+        <source>Color</source>
+        <target state="new">Color</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Create" xml:space="preserve">
+        <source>Create</source>
+        <target state="new">Create</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Cyan" xml:space="preserve">
+        <source>Cyan</source>
+        <target state="new">Cyan</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="First day of week" xml:space="preserve">
+        <source>First day of week</source>
+        <target state="new">First day of week</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Get all PRO features" xml:space="preserve">
+        <source>Get all PRO features</source>
+        <target state="new">Get all PRO features</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Green" xml:space="preserve">
+        <source>Green</source>
+        <target state="new">Green</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Habit name" xml:space="preserve">
+        <source>Habit name</source>
+        <target state="new">Habit name</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Hours" xml:space="preserve">
+        <source>Hours</source>
+        <target state="new">Hours</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Indigo" xml:space="preserve">
+        <source>Indigo</source>
+        <target state="new">Indigo</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Let's save your data" xml:space="preserve">
+        <source>Let's save your data</source>
+        <target state="new">Let's save your data</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Liters" xml:space="preserve">
+        <source>Liters</source>
+        <target state="new">Liters</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Login Error" xml:space="preserve">
+        <source>Login Error</source>
+        <target state="new">Login Error</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Mark %lld" xml:space="preserve">
+        <source>Mark %lld</source>
+        <target state="new">Mark %lld</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Measure" xml:space="preserve">
+        <source>Measure</source>
+        <target state="new">Measure</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Meters" xml:space="preserve">
+        <source>Meters</source>
+        <target state="new">Meters</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Minutes" xml:space="preserve">
+        <source>Minutes</source>
+        <target state="new">Minutes</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Monday" xml:space="preserve">
+        <source>Monday</source>
+        <target state="new">Monday</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="OK" xml:space="preserve">
+        <source>OK</source>
+        <target state="new">OK</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Orange" xml:space="preserve">
+        <source>Orange</source>
+        <target state="new">Orange</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="PRO FEATURES" xml:space="preserve">
+        <source>PRO FEATURES</source>
+        <target state="new">PRO FEATURES</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Pink" xml:space="preserve">
+        <source>Pink</source>
+        <target state="new">Pink</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Red" xml:space="preserve">
+        <source>Red</source>
+        <target state="new">Red</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Set what is the firs day" xml:space="preserve">
+        <source>Set what is the firs day</source>
+        <target state="new">Set what is the firs day</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Settings" xml:space="preserve">
+        <source>Settings</source>
+        <target state="new">Settings</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sign in with Apple" xml:space="preserve">
+        <source>Sign in with Apple</source>
+        <target state="new">Sign in with Apple</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Square Habits" xml:space="preserve">
+        <source>Square Habits</source>
+        <target state="new">Square Habits</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sunday" xml:space="preserve">
+        <source>Sunday</source>
+        <target state="new">Sunday</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Tap to change the emoji" xml:space="preserve">
+        <source>Tap to change the emoji</source>
+        <target state="new">Tap to change the emoji</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unity" xml:space="preserve">
+        <source>Unity</source>
+        <target state="new">Unity</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Unlock PRO" xml:space="preserve">
+        <source>Unlock PRO</source>
+        <target state="new">Unlock PRO</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="VIEW SETTINGS" xml:space="preserve">
+        <source>VIEW SETTINGS</source>
+        <target state="new">VIEW SETTINGS</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="We save your habits with your e-mail to you access in other devices" xml:space="preserve">
+        <source>We save your habits with your e-mail to you access in other devices</source>
+        <target state="new">We save your habits with your e-mail to you access in other devices</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="You need to login with iCloud to save your data." xml:space="preserve">
+        <source>You need to login with iCloud to save your data.</source>
+        <target state="new">You need to login with iCloud to save your data.</target>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
