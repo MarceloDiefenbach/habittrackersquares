@@ -57,3 +57,22 @@
 "Edit_delete_alert_message" = "Tem certeza que quer apagar? Essa ação não poderá ser desfeita";
 "Edit_delete_cancel_button" = "Cancelar";
 "Edit_delete_confirm_button" = "Apagar";
+
+//MARK: - PayWall View
+"PayWall_view_title" = "Assinatura mensal";
+"PayWall_view_Subtitle" = "Estamos construindo esse aplicativo e você pode participar com desconto até o dia do lançamento";
+"PayWall_view_only" = "Apenas";
+"PayWall_view_month" = "mês";
+"PayWall_view_Unlimited_habits" = "Hábitos ilimitados";
+"PayWall_view_Feature_request_priority" = "Peça novas funcionalidades";
+"PayWall_view_ads_free" = "Anúncios grátis";
+"PayWall_view_COMING_SOON" = "EM BREVE";
+"PayWall_view_Widgets" = "Widgets";
+"PayWall_view_Lembretes" = "Lembretes";
+"PayWall_view_Desafios_com_amigos" = "Desafios com amigos";
+"PayWall_view_Unlock_all_PRO_features" = "Desbloqueie todos os recursos PRO";
+"PayWall_view_Read_the" = "Leia o";
+"PayWall_view_Terms_of_use_(EULA)" = "Termos de uso (EULA)";
+"PayWall_view_and" = "e";
+"PayWall_view_Privacy_Policy" = "política de Privacidade";
+"PayWall_view_Loading" = "Carregando";

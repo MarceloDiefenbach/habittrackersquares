@@ -57,3 +57,22 @@
 "Edit_delete_alert_message" = "¿Estas seguro que quieres borrarlo? Esta acción no se puede deshacer";
 "Edit_delete_cancel_button" = "Cancelar";
 "Edit_delete_confirm_button" = "Apagar";
+
+//MARK: - PayWall View
+"PayWall_view_title" = "Suscripción mensual";
+"PayWall_view_Subtitle" = "Estamos creando esta aplicación y puedes formar parte de ella con descuento hasta el día del lanzamiento.";
+"PayWall_view_only" = "Solo";
+"PayWall_view_month" = "mes";
+"PayWall_view_Unlimited_habits" = "Hábitos ilimitados";
+"PayWall_view_Feature_request_priority" = "Prioridad de solicitud de función";
+"PayWall_view_ads_free" = "Anuncios gratis";
+"PayWall_view_COMING_SOON" = "MUY PRONTO";
+"PayWall_view_widgets" = "widgets";
+"PayWall_view_Lembretes" = "Recordatorios";
+"PayWall_view_Desafios_com_amigos" = "Retos con amigos";
+"PayWall_view_Unlock_all_PRO_features" = "Desbloquea todas las funciones PRO";
+"PayWall_view_Read_the" = "Leer el";
+"PayWall_view_Terms_of_use_(EULA)" = "Condiciones de uso (CLUF)";
+"PayWall_view_and" = "y";
+"PayWall_view_Privacy_Policy" = "política de privacidad";
+"PayWall_view_Loading" = "Cargando";

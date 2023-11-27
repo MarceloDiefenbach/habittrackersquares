@@ -57,3 +57,22 @@
 "Edit_delete_alert_message" = "Etes-vous sûr que vous voulez supprimer? Cette action ne peut pas être annulée";
 "Edit_delete_cancel_button" = "Annuler";
 "Edit_delete_confirm_button" = "Éteindre";
+
+//MARK: - PayWall View
+"PayWall_view_title" = "Souscription mensuelle";
+"PayWall_view_Subtitle" = "Nous construisons cette application et vous pouvez en faire partie avec une réduction jusqu'au jour du lancement";
+"PayWall_view_only" = "Seulement";
+"PayWall_view_month" = "mois";
+"PayWall_view_Unlimited_habits" = "Habitudes illimitées";
+"PayWall_view_Feature_request_priority" = "Priorité des demandes de fonctionnalités";
+"PayWall_view_ads_free" = "Annonces gratuites";
+"PayWall_view_COMING_SOON" = "À VENIR";
+"PayWall_view_Widgets" = "Widgets";
+"PayWall_view_Lembretes" = "Rappels";
+"PayWall_view_Desafios_com_amigos" = "Défis entre amis";
+"PayWall_view_Unlock_all_PRO_features" = "Débloquez toutes les fonctionnalités PRO";
+"PayWall_view_Read_the" = "Lis le";
+"PayWall_view_Terms_of_use_(EULA)" = "Conditions d'utilisation (CLUF)";
+"PayWall_view_and" = "et";
+"PayWall_view_Privacy_Policy" = "politique de confidentialité";
+"PayWall_view_Loading" = "Chargement";

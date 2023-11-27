@@ -32,55 +32,68 @@ enum DayOfWeek {
 
 struct SettingsView: View {
     @EnvironmentObject var settingsViewModel: SettingsViewModel
+    @EnvironmentObject var storeKitViewModel: StoreKitViewModel
     
     var body: some View {
-        List {
-            Section {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Unlock PRO")
-                            .font(.system(size: 16, weight: .bold))
-                        Text("Get all PRO features")
-                            .font(.system(size: 10, weight: .regular))
-                    }
-                    Spacer()
-                    Image(systemName: "chevron.right")
-                        .font(.system(size: 16, weight: .light))
-                }.padding(.vertical, 8)
-            } header: {
-                Text("PRO FEATURES")
-            }
-            Section {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("First day of week")
-                            .font(.system(size: 16, weight: .bold))
-                        Text("Set what is the firs day")
-                            .font(.system(size: 10, weight: .regular))
-                    }
-                    Spacer()
-                    Menu {
-                        Button(DayOfWeek.monday.label, action: {
-                            settingsViewModel.firstDayString = .monday
-                            UserDefaults.standard.set(settingsViewModel.firstDayString.chave, forKey: "firstDay")
-                        })
-                        Button(DayOfWeek.sunday.label, action: {
-                            settingsViewModel.firstDayString = .sunday
-                            UserDefaults.standard.set(settingsViewModel.firstDayString.chave, forKey: "firstDay")
-                        })
-                    } label: {
-                        HStack {
-                            Text(settingsViewModel.firstDayString.label)
-                                .font(.system(size: 16, weight: .light))
-                            Image(systemName: "chevron.right")
-                                .font(.system(size: 16, weight: .light))
+        NavigationView {
+            List {
+                Section {
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("Unlock PRO")
+                                .font(.system(size: 16, weight: .bold))
+                            Text("Get all PRO features")
+                                .font(.system(size: 10, weight: .regular))
                         }
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .font(.system(size: 16, weight: .light))
                     }
-                }.padding(.vertical, 8)
-            } header: {
-                Text("VIEW SETTINGS")
+                    .onTapGesture {
+                        settingsViewModel.isShowingPayWall = true
+                    }
+                    .padding(.vertical, 8)
+                } header: {
+                    Text("PRO FEATURES")
+                }
+                Section {
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("First day of week")
+                                .font(.system(size: 16, weight: .bold))
+                            Text("Set what is the firs day")
+                                .font(.system(size: 10, weight: .regular))
+                        }
+                        Spacer()
+                        Menu {
+                            Button(DayOfWeek.monday.label, action: {
+                                settingsViewModel.firstDayString = .monday
+                                UserDefaults.standard.set(settingsViewModel.firstDayString.chave, forKey: "firstDay")
+                            })
+                            Button(DayOfWeek.sunday.label, action: {
+                                settingsViewModel.firstDayString = .sunday
+                                UserDefaults.standard.set(settingsViewModel.firstDayString.chave, forKey: "firstDay")
+                            })
+                        } label: {
+                            HStack {
+                                Text(settingsViewModel.firstDayString.label)
+                                    .font(.system(size: 16, weight: .light))
+                                Image(systemName: "chevron.right")
+                                    .font(.system(size: 16, weight: .light))
+                            }
+                        }
+                    }.padding(.vertical, 8)
+                } header: {
+                    Text("VIEW SETTINGS")
+                }
             }
-        }.navigationTitle("Settings")
+            .navigationTitle("Settings")
+            .sheet(isPresented: $settingsViewModel.isShowingPayWall) {
+                PayWall()
+                    .environmentObject(storeKitViewModel)
+                    .environmentObject(settingsViewModel)
+            }
+        }
     }
 }
 

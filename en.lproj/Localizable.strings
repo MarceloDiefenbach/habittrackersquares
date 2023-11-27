@@ -57,3 +57,22 @@
 "Edit_delete_alert_message" = "Are you sure you want to delete? This action cannot be undone";
 "Edit_delete_cancel_button" = "Cancel";
 "Edit_delete_confirm_button" = "To switch off";
+
+//MARK: - PayWall View
+"PayWall_view_title" = "Monthly subscription";
+"PayWall_view_Subtitle" = "We are building this app and you can be part this with discount until the launch day";
+"PayWall_view_only" = "Only";
+"PayWall_view_month" = "month";
+"PayWall_view_Unlimited_habits" = "Unlimited habits";
+"PayWall_view_Feature_request_priority" = "Feature request priority";
+"PayWall_view_ads_free" = "Ads free";
+"PayWall_view_COMING_SOON" = "COMING SOON";
+"PayWall_view_Widgets" = "Widgets";
+"PayWall_view_Lembretes" = "Reminders";
+"PayWall_view_Desafios_com_amigos" = "Challenges with friends";
+"PayWall_view_Unlock_all_PRO_features" = "Unlock all PRO features";
+"PayWall_view_Read_the" = "Read the";
+"PayWall_view_Terms_of_use_(EULA)" = "Terms of use (EULA)";
+"PayWall_view_and" = "and";
+"PayWall_view_Privacy_Policy" = "Privacy Policy";
+"PayWall_view_Loading" = "Loading";

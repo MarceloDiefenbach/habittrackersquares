@@ -28,9 +28,12 @@ struct TrackDayView: View {
     
     var body: some View {
         RoundedRectangle(cornerRadius: 2)
-            .fill(actualOpacity == 0.0 ? Color("HeaderHabitBackground") : color.opacity(actualOpacity))
-            .stroke(isToday(formatDateToString(actualDay)) ? Color("blackPure") : Color.clear, lineWidth: 1)
+            .foregroundColor(actualOpacity == 0.0 ? Color("HeaderHabitBackground") : color.opacity(actualOpacity))
             .frame(width: width, height: width)
+            .overlay {
+                RoundedRectangle(cornerRadius: 2)
+                    .stroke(isToday(formatDateToString(actualDay)) ? Color("blackPure") : Color.clear, lineWidth: 1)
+            }
         }
 }
 

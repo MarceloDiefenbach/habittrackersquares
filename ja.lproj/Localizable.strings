@@ -57,3 +57,22 @@
 "Edit_delete_alert_message" = "消去してもよろしいですか？この操作は元に戻せません";
 "Edit_delete_cancel_button" = "キャンセル";
 "Edit_delete_confirm_button" = "スイッチを切る";
+
+//MARK: - PayWall View
+"PayWall_view_title" = "毎月のサブスクリプション";
+"PayWall_view_Subtitle" = "私たちはこのアプリを構築中です。ローンチ日までは割引価格でこのアプリに参加できます";
+"PayWall_view_only" = "のみ";
+"PayWall_view_month" = "月";
+"PayWall_view_Unlimited_habits" = "無制限の習慣";
+"PayWall_view_Feature_request_priority" = "機能リクエストの優先順位";
+"PayWall_view_ads_free" = "広告なし";
+"PayWall_view_COMING_SOON" = "近日公開";
+"PayWall_view_widgets" = "ウィジェット";
+"PayWall_view_Lembretes" = "リマインダー";
+"PayWall_view_Desafios_com_amigos" = "友達と一緒にチャレンジ";
+"PayWall_view_Unlock_all_PRO_features" = "すべての PRO 機能のロックを解除する";
+"PayWall_view_Read_the" = "読む";
+"PayWall_view_Terms_of_use_(EULA)" = "利用規約 (EULA)";
+"PayWall_view_and" = "そして";
+"PayWall_view_Privacy_Policy" = "プライバシーポリシー";
+"PayWall_view_Loading" = "読み込み中";

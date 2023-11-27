@@ -13,6 +13,10 @@ class SettingsViewModel: ObservableObject {
     @Published var isPro: Bool = false
     @Published var firstDayString: DayOfWeek = .monday
     
+    @Published var isLoadingPurchase = false
+    @Published var isShowingPayWall = false
+    @Published var isShowingPayWallList = false
+    
     init() {
         self.isPro = isPro
         

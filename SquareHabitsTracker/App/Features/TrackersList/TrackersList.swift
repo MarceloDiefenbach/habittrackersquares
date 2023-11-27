@@ -11,6 +11,7 @@ import CloudKit
 struct TrackersList: View {
     @StateObject var viewModel = HabitsViewModel()
     @StateObject var settingsViewModel = SettingsViewModel()
+    @StateObject var storeKitVM = StoreKitViewModel()
 
     @State var isShowingNewTrackerView = false
     @State var isShowingMarkView = false
@@ -94,7 +95,11 @@ struct TrackersList: View {
                     Image(systemName: "plus.circle.fill")
                         .foregroundStyle(Color("blackPure"))
                         .onTapGesture {
-                            isShowingNewTrackerView.toggle()
+                            if viewModel.habits.count >= 1 {
+                                settingsViewModel.isShowingPayWallList = true
+                            } else {
+                                isShowingNewTrackerView = true
+                            }
                         }
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -117,10 +122,16 @@ struct TrackersList: View {
             .sheet(isPresented: $isShowingSettingView) {
                 SettingsView()
                     .environmentObject(settingsViewModel)
+                    .environmentObject(storeKitVM)
             }
             .navigationDestination(isPresented: $isShowingEditView) {
                 EditView()
                     .environmentObject(viewModel)
+            }
+            .sheet(isPresented: $settingsViewModel.isShowingPayWallList) {
+                PayWall()
+                    .environmentObject(storeKitVM)
+                    .environmentObject(settingsViewModel)
             }
         }
         .onAppear {

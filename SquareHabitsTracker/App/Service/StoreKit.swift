@@ -17,14 +17,9 @@ class StoreKitViewModel: ObservableObject {
     @Published private(set) var purchasedSubscriptions: [Product] = []
     @Published private(set) var subscriptionGroupStatus: RenewalState?
     
-    @Published var unlockALl: Bool = false
-    @Published var airport: Bool = false
-    @Published var work: Bool = false
-    @Published var home: Bool = false
-    @Published var clothes: Bool = false
-    @Published var showAds: Bool = true
+    @Published var isPRO: Bool = false
     
-    private let productIds: [String] = ["com.marcelo.wordcoach.airport", "com.marcelo.wordcoach.unlockall", "com.marcelo.wordcoach.clothes", "com.marcelo.wordcoach.home", "com.marcelo.wordcoach.work"]
+    private let productIds: [String] = ["com.marcelo.squarehabits.monthly"]
     
     var updateListenerTask : Task<Void, Error>? = nil
 
@@ -127,21 +122,10 @@ class StoreKitViewModel: ObservableObject {
                 case .consumable:
                     if transaction.productID == "" {}
                 case .nonConsumable:
-                    if transaction.productID == "com.marcelo.wordcoach.home" {
-                        self.home = true
-                    } else if transaction.productID == "com.marcelo.wordcoach.work" {
-                        self.work = true
-                    } else if transaction.productID == "com.marcelo.wordcoach.clothes" {
-                        self.clothes = true
-                    }
+                    if transaction.productID == "" {}
                 case .autoRenewable:
-                    if transaction.productID == "com.marcelo.wordcoach.unlockall" {
-                        self.showAds = false
-                        self.unlockALl = true
-                        
-                        self.clothes = true
-                        self.work = true
-                        self.home = true
+                    if transaction.productID == "com.marcelo.squarehabits.monthly" {
+                        isPRO = true
                     }
                 default:
                     break
