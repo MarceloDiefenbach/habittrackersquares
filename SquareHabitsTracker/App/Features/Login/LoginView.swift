@@ -87,12 +87,12 @@ struct LoginView: View {
                 Image(systemName: "icloud")
                     .font(.system(size: 120, weight: .regular))
                     .padding(.bottom, 32)
-                Text("LoginView_title_view")
+                Text("Vamos salvar seus hábitos no iCloud")
                     .font(.system(size: 32, weight: .bold))
                     .multilineTextAlignment(.center)
                     .padding(.bottom, 16)
                     .frame(width: UIScreen.main.bounds.width * 0.5)
-                Text("LoginView_subtitle_view")
+                Text("Seus dados são salvos com iCloud para você acessar em outros dispositivos")
                     .font(.system(size: 12, weight: .light))
                     .multilineTextAlignment(.center)
                     .padding(.bottom, 16)
@@ -107,7 +107,7 @@ struct LoginView: View {
                         .font(.system(size: 20, weight: .regular))
                         .foregroundStyle(.white)
                         .padding(.trailing, 4)
-                    Text("LoginView_sign_in_button")
+                    Text("Sign in with Apple")
                         .font(.system(size: 20, weight: .regular))
                         .foregroundStyle(.white)
                     Spacer()
@@ -122,9 +122,9 @@ struct LoginView: View {
                 .padding(.bottom, 24)
                 .alert(isPresented: $showAlert) {
                     Alert(
-                        title: Text("LoginView_title_error_lable"),
-                        message: Text("LoginView_subtitle_error_label"),
-                        dismissButton: .default(Text("LoginView_ok_button_error_label"))
+                        title: Text("Erro de login"),
+                        message: Text("Você precisa fazer login com iCloud para continuar"),
+                        dismissButton: .default(Text("Ok"))
                     )
                 }
                 .onAppear {

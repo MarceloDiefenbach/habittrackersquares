@@ -14,13 +14,13 @@
             filePath = "SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
             landmarkName = "fetchHabits(completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "18D406E4-305D-421A-A449-0101DC30DCFA - 73fddfd56cb4a265"
+                  uuid = "18D406E4-305D-421A-A449-0101DC30DCFA - 73fddfd56cb4d97b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -30,12 +30,12 @@
                   urlString = "file:///Users/marcelodiefenabch/GIT/habittrackersquares/SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "142"
-                  endingLineNumber = "142"
+                  startingLineNumber = "180"
+                  endingLineNumber = "180"
                   offsetFromSymbolStart = "1219">
                </Location>
                <Location
-                  uuid = "18D406E4-305D-421A-A449-0101DC30DCFA - 73fddfd56cb4a5c6"
+                  uuid = "18D406E4-305D-421A-A449-0101DC30DCFA - 73fddfd56cb4d97b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -45,27 +45,12 @@
                   urlString = "file:///Users/marcelodiefenabch/GIT/habittrackersquares/SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "145"
-                  endingLineNumber = "145"
-                  offsetFromSymbolStart = "1184">
-               </Location>
-               <Location
-                  uuid = "18D406E4-305D-421A-A449-0101DC30DCFA - 73fddfd56cb4a265"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SquareHabitsTracker.HabitsViewModel.fetchHabits(completion: (Swift.Result&lt;Swift.Array&lt;SquareHabitsTracker.Habit&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SquareHabitsTracker"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/marcelodiefenabch/GIT/habittrackersquares/SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "142"
-                  endingLineNumber = "142"
+                  startingLineNumber = "180"
+                  endingLineNumber = "180"
                   offsetFromSymbolStart = "875">
                </Location>
                <Location
-                  uuid = "18D406E4-305D-421A-A449-0101DC30DCFA - 73fddfd56cb4a265"
+                  uuid = "18D406E4-305D-421A-A449-0101DC30DCFA - 73fddfd56cb4d97b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -75,8 +60,8 @@
                   urlString = "file:///Users/marcelodiefenabch/GIT/habittrackersquares/SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "142"
-                  endingLineNumber = "142"
+                  startingLineNumber = "180"
+                  endingLineNumber = "180"
                   offsetFromSymbolStart = "844">
                </Location>
             </Locations>
@@ -92,13 +77,13 @@
             filePath = "SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
             landmarkName = "fetchHabits(completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "937F00E7-7345-416A-B5CC-49D5F3BF43C5 - 73fddfd56cb4a2ce"
+                  uuid = "937F00E7-7345-416A-B5CC-49D5F3BF43C5 - 73fddfd56cb4d9a4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -108,12 +93,12 @@
                   urlString = "file:///Users/marcelodiefenabch/GIT/habittrackersquares/SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "137"
-                  endingLineNumber = "137"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
                   offsetFromSymbolStart = "815">
                </Location>
                <Location
-                  uuid = "937F00E7-7345-416A-B5CC-49D5F3BF43C5 - 73fddfd56cb4a200"
+                  uuid = "937F00E7-7345-416A-B5CC-49D5F3BF43C5 - 73fddfd56cb4d9a4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -123,27 +108,12 @@
                   urlString = "file:///Users/marcelodiefenabch/GIT/habittrackersquares/SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "139"
-                  endingLineNumber = "139"
-                  offsetFromSymbolStart = "700">
-               </Location>
-               <Location
-                  uuid = "937F00E7-7345-416A-B5CC-49D5F3BF43C5 - 73fddfd56cb4a2ce"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SquareHabitsTracker.HabitsViewModel.fetchHabits(completion: (Swift.Result&lt;Swift.Array&lt;SquareHabitsTracker.Habit&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SquareHabitsTracker"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/marcelodiefenabch/GIT/habittrackersquares/SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "137"
-                  endingLineNumber = "137"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
                   offsetFromSymbolStart = "767">
                </Location>
                <Location
-                  uuid = "937F00E7-7345-416A-B5CC-49D5F3BF43C5 - 73fddfd56cb4a2ce"
+                  uuid = "937F00E7-7345-416A-B5CC-49D5F3BF43C5 - 73fddfd56cb4d9a4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -153,8 +123,8 @@
                   urlString = "file:///Users/marcelodiefenabch/GIT/habittrackersquares/SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "137"
-                  endingLineNumber = "137"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
                   offsetFromSymbolStart = "768">
                </Location>
             </Locations>
@@ -170,13 +140,13 @@
             filePath = "SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "186"
-            endingLineNumber = "186"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
             landmarkName = "fetchHabits(completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "8618DE01-3AA3-4770-A433-A417C3F62735 - 73fddfd56cb4d831"
+                  uuid = "8618DE01-3AA3-4770-A433-A417C3F62735 - 73fddfd56cb4df17"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -186,12 +156,12 @@
                   urlString = "file:///Users/marcelodiefenabch/GIT/habittrackersquares/SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "186"
-                  endingLineNumber = "186"
+                  startingLineNumber = "224"
+                  endingLineNumber = "224"
                   offsetFromSymbolStart = "2594">
                </Location>
                <Location
-                  uuid = "8618DE01-3AA3-4770-A433-A417C3F62735 - 73fddfd56cb4d831"
+                  uuid = "8618DE01-3AA3-4770-A433-A417C3F62735 - 73fddfd56cb4df17"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -201,27 +171,12 @@
                   urlString = "file:///Users/marcelodiefenabch/GIT/habittrackersquares/SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "186"
-                  endingLineNumber = "186"
-                  offsetFromSymbolStart = "5804">
-               </Location>
-               <Location
-                  uuid = "8618DE01-3AA3-4770-A433-A417C3F62735 - 73fddfd56cb4d831"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SquareHabitsTracker.HabitsViewModel.fetchHabits(completion: (Swift.Result&lt;Swift.Array&lt;SquareHabitsTracker.Habit&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SquareHabitsTracker"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/marcelodiefenabch/GIT/habittrackersquares/SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "186"
-                  endingLineNumber = "186"
+                  startingLineNumber = "224"
+                  endingLineNumber = "224"
                   offsetFromSymbolStart = "2247">
                </Location>
                <Location
-                  uuid = "8618DE01-3AA3-4770-A433-A417C3F62735 - 73fddfd56cb4d831"
+                  uuid = "8618DE01-3AA3-4770-A433-A417C3F62735 - 73fddfd56cb4df17"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -231,8 +186,8 @@
                   urlString = "file:///Users/marcelodiefenabch/GIT/habittrackersquares/SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "186"
-                  endingLineNumber = "186"
+                  startingLineNumber = "224"
+                  endingLineNumber = "224"
                   offsetFromSymbolStart = "1936">
                </Location>
             </Locations>
@@ -248,13 +203,13 @@
             filePath = "SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
             landmarkName = "fetchHabits(completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "95B15395-2FB1-4948-B2D1-FE87D1F26DDD - 73fddfd56cb4dbb5"
+                  uuid = "95B15395-2FB1-4948-B2D1-FE87D1F26DDD - 73fddfd56cb4de8b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -264,12 +219,12 @@
                   urlString = "file:///Users/marcelodiefenabch/GIT/habittrackersquares/SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "190"
-                  endingLineNumber = "190"
+                  startingLineNumber = "228"
+                  endingLineNumber = "228"
                   offsetFromSymbolStart = "7374">
                </Location>
                <Location
-                  uuid = "95B15395-2FB1-4948-B2D1-FE87D1F26DDD - 73fddfd56cb4db92"
+                  uuid = "95B15395-2FB1-4948-B2D1-FE87D1F26DDD - 73fddfd56cb4df68"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -279,27 +234,12 @@
                   urlString = "file:///Users/marcelodiefenabch/GIT/habittrackersquares/SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "189"
-                  endingLineNumber = "189"
-                  offsetFromSymbolStart = "5820">
-               </Location>
-               <Location
-                  uuid = "95B15395-2FB1-4948-B2D1-FE87D1F26DDD - 73fddfd56cb4db92"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SquareHabitsTracker.HabitsViewModel.fetchHabits(completion: (Swift.Result&lt;Swift.Array&lt;SquareHabitsTracker.Habit&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SquareHabitsTracker"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/marcelodiefenabch/GIT/habittrackersquares/SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "189"
-                  endingLineNumber = "189"
+                  startingLineNumber = "227"
+                  endingLineNumber = "227"
                   offsetFromSymbolStart = "7541">
                </Location>
                <Location
-                  uuid = "95B15395-2FB1-4948-B2D1-FE87D1F26DDD - 73fddfd56cb4db92"
+                  uuid = "95B15395-2FB1-4948-B2D1-FE87D1F26DDD - 73fddfd56cb4df68"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -309,8 +249,8 @@
                   urlString = "file:///Users/marcelodiefenabch/GIT/habittrackersquares/SquareHabitsTracker/App/Features/HabitsViewModel/HabitsViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "189"
-                  endingLineNumber = "189"
+                  startingLineNumber = "227"
+                  endingLineNumber = "227"
                   offsetFromSymbolStart = "5948">
                </Location>
             </Locations>

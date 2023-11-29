@@ -50,7 +50,45 @@ class HabitsViewModel: ObservableObject {
             }
         }.resume()
     }
-
+    
+    func editHabit(habitID: Int, title: String, color: String, emoji: String, completion: @escaping (Bool, Error?) -> Void) {
+        let url = URL(string: "\(url)api/habits")! // Asegure-se de que baseUrl é a URL base do seu serviço
+        var request = URLRequest(url: url)
+        request.httpMethod = "PUT" // Método alterado para PUT
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        // Inclua o ID no corpo da requisição
+        let body: [String: Any] = ["id": habitID, "title": title, "color": color, "ownerID": ownerID, "emoji": emoji]
+        print(body)
+        request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: [])
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+                completion(false, error)
+                return
+            }
+            
+            if let data = data {
+                do {
+                    if let jsonResponse = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+                       let habitID = jsonResponse["id"] as? Int {
+                        print("Habit edited, ID: \(habitID)")
+                        if let index = self.habits.firstIndex(where: { $0.id == habitID }) {
+                            self.habits[index].color = color
+                            self.habits[index].title = title
+                            self.habits[index].emoji = emoji
+                            self.selectedHabit = self.habits[index]
+                            self.habits = Array(self.habits)
+                        }
+                        completion(true, nil)
+                    }
+                } catch {
+                    print("Error parsing response data: \(error)")
+                    completion(false, error)
+                }
+            }
+        }.resume()
+    }
     
     private func containsMark(for dateString: String, in marks: [Habit.Mark]) -> Bool {
         let formatter = DateFormatter()

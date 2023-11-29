@@ -38,6 +38,9 @@ struct TrackersList: View {
                                 HeaderTrackView(habit: habit, editAction: {
                                     viewModel.selectedHabit = habit
                                     isShowingEditView = true
+                                }, markAction: {
+                                    viewModel.selectedHabit = habit
+                                    isShowingMarkView.toggle()
                                 })
                                 CalendarView(habit: habit, allDays: generateDateArray(endDay: settingsViewModel.firstDayString.chave))
                                     .onTapGesture {
@@ -48,6 +51,7 @@ struct TrackersList: View {
                             .padding(16)
                             .frame(height: UIScreen.main.bounds.width * 0.425)
                             .background(hexToColor(hex: habit.color).opacity(0.1))
+                            .clipShape(RoundedRectangle(cornerRadius: 8))
                             .overlay(){
                                 RoundedRectangle(cornerRadius: 8)
                                     .stroke(hexToColor(hex: habit.color).opacity(0.5), lineWidth: 0.5)
@@ -61,10 +65,10 @@ struct TrackersList: View {
                                 Image(systemName: "calendar.badge.plus")
                                     .font(.system(size: 48, weight: .light))
                                     .foregroundStyle(Color("blackPure"))
-                                Text("List_View_empty_State_title")
+                                Text("Lista vazia")
                                     .font(.system(size: 24, weight: .bold))
                                     .foregroundStyle(Color("blackPure"))
-                                Text("List_View_empty_State_subtitle")
+                                Text("Crie seu primeiro hábito para começar a acompanhar o histórico")
                                     .font(.system(size: 12, weight: .regular))
                                     .multilineTextAlignment(.center)
                                     .foregroundStyle(.gray)
@@ -95,7 +99,7 @@ struct TrackersList: View {
                     Image(systemName: "plus.circle.fill")
                         .foregroundStyle(Color("blackPure"))
                         .onTapGesture {
-                            if viewModel.habits.count >= 1 {
+                            if viewModel.habits.count >= 3 {
                                 settingsViewModel.isShowingPayWallList = true
                             } else {
                                 isShowingNewTrackerView = true

@@ -15,9 +15,10 @@
 		9D721C742B121D6D0021C3C7 /* HabitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D721C732B121D6D0021C3C7 /* HabitsViewModel.swift */; };
 		9D721C7D2B12789A0021C3C7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D721C7C2B12789A0021C3C7 /* LoginView.swift */; };
 		9D721C802B128B5F0021C3C7 /* EmojiPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D721C7F2B128B5F0021C3C7 /* EmojiPickerView.swift */; };
+		9DBD0BD22B17A20F0086F650 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 9DBD0BD12B17A20F0086F650 /* Localizable.xcstrings */; };
+		9DBD0BD52B17AE280086F650 /* CalendarView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD0BD42B17AE280086F650 /* CalendarView2.swift */; };
 		9DEAD6862B13CBFE005E1DFE /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAD6852B13CBFE005E1DFE /* SettingsViewModel.swift */; };
 		9DEAD6882B13CC1B005E1DFE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAD6872B13CC1B005E1DFE /* SettingsView.swift */; };
-		9DEAD6912B13D4D8005E1DFE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DEAD6932B13D4D8005E1DFE /* Localizable.strings */; };
 		9DEAD69A2B13E150005E1DFE /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAD6992B13E14F005E1DFE /* EditView.swift */; };
 		9DEAD69D2B1402CE005E1DFE /* PayWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAD69C2B1402CE005E1DFE /* PayWall.swift */; };
 		9DEAD6A02B1406B8005E1DFE /* StoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAD69F2B1406B8005E1DFE /* StoreKit.swift */; };
@@ -39,13 +40,10 @@
 		9D721C732B121D6D0021C3C7 /* HabitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewModel.swift; sourceTree = "<group>"; };
 		9D721C7C2B12789A0021C3C7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9D721C7F2B128B5F0021C3C7 /* EmojiPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPickerView.swift; sourceTree = "<group>"; };
+		9DBD0BD12B17A20F0086F650 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		9DBD0BD42B17AE280086F650 /* CalendarView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView2.swift; sourceTree = "<group>"; };
 		9DEAD6852B13CBFE005E1DFE /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		9DEAD6872B13CC1B005E1DFE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		9DEAD6922B13D4D8005E1DFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		9DEAD6942B13D4DC005E1DFE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
-		9DEAD6952B13D4DD005E1DFE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		9DEAD6962B13DD96005E1DFE /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		9DEAD6972B13DDA6005E1DFE /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9DEAD6992B13E14F005E1DFE /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		9DEAD69C2B1402CE005E1DFE /* PayWall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWall.swift; sourceTree = "<group>"; };
 		9DEAD69F2B1406B8005E1DFE /* StoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKit.swift; sourceTree = "<group>"; };
@@ -119,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				9DEAD6992B13E14F005E1DFE /* EditView.swift */,
+				9DBD0BD42B17AE280086F650 /* CalendarView2.swift */,
 			);
 			path = EditHabitView;
 			sourceTree = "<group>";
@@ -151,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				9DEAD6A22B1418F4005E1DFE /* Square Habits.storekit */,
-				9DEAD6932B13D4D8005E1DFE /* Localizable.strings */,
 				DFF4B8282B0BCCA2005E8F61 /* SquareHabitsTracker */,
 				DFF4B8272B0BCCA2005E8F61 /* Products */,
 			);
@@ -174,6 +172,7 @@
 				DFF4B82D2B0BCCA5005E8F61 /* Assets.xcassets */,
 				DFF4B82F2B0BCCA5005E8F61 /* SquareHabitsTracker.entitlements */,
 				DFF4B8302B0BCCA5005E8F61 /* Preview Content */,
+				9DBD0BD12B17A20F0086F650 /* Localizable.xcstrings */,
 			);
 			path = SquareHabitsTracker;
 			sourceTree = "<group>";
@@ -280,12 +279,8 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
-				"pt-BR",
-				ja,
-				es,
-				fr,
+				en,
 			);
 			mainGroup = DFF4B81D2B0BCCA2005E8F61;
 			productRefGroup = DFF4B8272B0BCCA2005E8F61 /* Products */;
@@ -303,8 +298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFF4B8322B0BCCA5005E8F61 /* Preview Assets.xcassets in Resources */,
-				9DEAD6912B13D4D8005E1DFE /* Localizable.strings in Resources */,
 				DFF4B82E2B0BCCA5005E8F61 /* Assets.xcassets in Resources */,
+				9DBD0BD22B17A20F0086F650 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DEAD6A02B1406B8005E1DFE /* StoreKit.swift in Sources */,
+				9DBD0BD52B17AE280086F650 /* CalendarView2.swift in Sources */,
 				9DEAD6882B13CC1B005E1DFE /* SettingsView.swift in Sources */,
 				DFFA725A2B0BF95100B286CB /* TrackersList.swift in Sources */,
 				DFF4B82C2B0BCCA2005E8F61 /* TrackerView.swift in Sources */,
@@ -337,21 +333,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		9DEAD6932B13D4D8005E1DFE /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9DEAD6922B13D4D8005E1DFE /* en */,
-				9DEAD6942B13D4DC005E1DFE /* ja */,
-				9DEAD6952B13D4DD005E1DFE /* pt-BR */,
-				9DEAD6962B13DD96005E1DFE /* es */,
-				9DEAD6972B13DDA6005E1DFE /* fr */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DFF4B8332B0BCCA5005E8F61 /* Debug */ = {
@@ -475,7 +456,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SquareHabitsTracker/SquareHabitsTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"SquareHabitsTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = 6525BU9D84;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -497,7 +478,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.6;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcelo.squarehabits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -516,7 +497,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SquareHabitsTracker/SquareHabitsTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"SquareHabitsTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = 6525BU9D84;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -538,7 +519,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.6;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcelo.squarehabits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;

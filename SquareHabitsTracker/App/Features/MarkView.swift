@@ -59,8 +59,9 @@ struct MarkView: View {
                 Spacer()
             }
             .padding(.vertical, 24)
-            .background(.blue)
+            .background(hexToColor(hex: viewModel.selectedHabit!.color))
             .clipShape(RoundedRectangle(cornerRadius: 16))
+            .shadow(color: hexToColor(hex: viewModel.selectedHabit!.color), radius: 4)
             .padding(.horizontal, 16)
             .onTapGesture {
                 let today = Date.now

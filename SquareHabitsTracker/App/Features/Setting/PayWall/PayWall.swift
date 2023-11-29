@@ -20,7 +20,7 @@ struct PayWall: View {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
                     Image("xmark.circle.fill")
-                    Text("PayWall_view_title")
+                    Text("Assinatura mensal")
                         .foregroundStyle(Color("blackPure"))
                         .font(.system(size: 32, weight: .bold))
                         .multilineTextAlignment(.center)
@@ -28,7 +28,7 @@ struct PayWall: View {
                         .padding(.bottom, 8)
                         .padding(.top, UIScreen.main.bounds.height * 0.09)
                     
-                    Text("PayWall_view_Subtitle")
+                    Text("Tenha acesso a todas as funcionalidade do app antes de todo mundo")
                         .foregroundStyle(Color("blackPure").opacity(0.8))
                         .font(.system(size: 12, weight: .light))
                         .multilineTextAlignment(.center)
@@ -39,13 +39,7 @@ struct PayWall: View {
                         if product.id == productID {
                             HStack(spacing: 4) {
                                 Spacer()
-                                Text("PayWall_view_only")
-                                    .font(.system(size: 24, weight: .regular))
-                                    .foregroundColor(.blackPure)
-                                Text("\(product.displayPrice) /")
-                                    .font(.system(size: 24, weight: .regular))
-                                    .foregroundColor(.blackPure)
-                                Text("PayWall_view_month")
+                                Text("Apenas \(product.displayPrice) / mês")
                                     .font(.system(size: 24, weight: .regular))
                                     .foregroundColor(.blackPure)
                                 Spacer()
@@ -57,26 +51,26 @@ struct PayWall: View {
                                     Circle()
                                         .fill(.blue)
                                         .frame(width: 10, height: 10)
-                                    Text("PayWall_view_Unlimited_habits")
+                                    Text("Hábitos ilimitados")
                                         .font(.system(size: 16, weight: .light))
                                 }
                                 HStack {
                                     Circle()
                                         .fill(.blue)
                                         .frame(width: 10, height: 10)
-                                    Text("PayWall_view_Feature_request_priority")
+                                    Text("Peça novas funcionalidades")
                                         .font(.system(size: 16, weight: .light))
                                 }
                                 HStack {
                                     Circle()
                                         .fill(.blue)
                                         .frame(width: 10, height: 10)
-                                    Text("PayWall_view_ads_free")
+                                    Text("Sem anúncios")
                                         .font(.system(size: 16, weight: .light))
                                 }
                                 .padding(.bottom, 40)
                                 
-                                Text("COMING_SOON")
+                                Text("Em breve")
                                     .foregroundStyle(.gray)
                                     .padding(.bottom, 16)
                                 
@@ -84,21 +78,21 @@ struct PayWall: View {
                                     Circle()
                                         .fill(.blue)
                                         .frame(width: 7, height: 7)
-                                    Text("PayWall_view_Widgets")
+                                    Text("Widgets")
                                         .font(.system(size: 10, weight: .light))
                                 }
                                 HStack {
                                     Circle()
                                         .fill(.blue)
                                         .frame(width: 7, height: 7)
-                                    Text("PayWall_view_Lembretes")
+                                    Text("Lembretes")
                                         .font(.system(size: 10, weight: .light))
                                 }
                                 HStack {
                                     Circle()
                                         .fill(.blue)
                                         .frame(width: 7, height: 7)
-                                    Text("PayWall_view_Desafios_com_amigos")
+                                    Text("Desafie amigos")
                                         .font(.system(size: 10, weight: .light))
                                 }
                             }
@@ -106,7 +100,7 @@ struct PayWall: View {
                             
                             HStack {
                                 Spacer()
-                                Text("PayWall_view_Unlock_all_PRO_features")
+                                Text("Assinar agora")
                                     .font(.system(size: 16, weight: .bold))
                                     .foregroundStyle(.white)
                                 Spacer()
@@ -125,11 +119,8 @@ struct PayWall: View {
                         }
                     }
                     
-                    HStack(spacing: 2) {
-                        Spacer()
-                        Text("PayWall_view_Read_the")
-                            .font(.system(size: 12, weight: .regular))
-                        Text("PayWall_view_Terms_of_use_(EULA)")
+                    VStack(spacing: 4) {
+                        Text("Termos de uso (EULA)")
                             .font(.system(size: 12, weight: .regular))
                             .foregroundStyle(.blue)
                             .onTapGesture {
@@ -137,9 +128,7 @@ struct PayWall: View {
                                     UIApplication.shared.open(url)
                                 }
                             }
-                        Text("PayWall_view_and")
-                            .font(.system(size: 12, weight: .regular))
-                        Text("PayWall_view_Privacy_Policy")
+                        Text("Política de privacidade")
                             .font(.system(size: 12, weight: .regular))
                             .foregroundStyle(.blue)
                             .onTapGesture {
@@ -147,7 +136,6 @@ struct PayWall: View {
                                     UIApplication.shared.open(url)
                                 }
                             }
-                        Spacer()
                     }
                 }
             }
@@ -159,7 +147,7 @@ struct PayWall: View {
                             Spacer()
                             ProgressView()
                                 .tint(.white)
-                            Text("PayWall_view_Loading")
+                            Text("Carregando")
                                 .foregroundStyle(.white)
                             Spacer()
                         }
