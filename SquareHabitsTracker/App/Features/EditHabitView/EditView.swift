@@ -35,7 +35,7 @@ struct EditView: View {
                         Spacer()
                     }
                     .padding(.vertical, 8)
-                    .background(hexToColor(hex: viewModel.selectedHabit!.color).opacity(0.03))
+                    .background(hexToColor(hex: viewModel.selectedHabit!.color).opacity(0.1))
                     .clipShape(RoundedRectangle(cornerRadius: 16))
                     .overlay(
                         RoundedRectangle(cornerRadius: 16)
@@ -50,7 +50,7 @@ struct EditView: View {
                         Spacer()
                     }
                     .padding()
-                    .background(hexToColor(hex: viewModel.selectedHabit!.color).opacity(0.03))
+                    .background(hexToColor(hex: viewModel.selectedHabit!.color).opacity(0.1))
                     .clipShape(RoundedRectangle(cornerRadius: 16))
                     .overlay(
                         RoundedRectangle(cornerRadius: 16)
@@ -60,7 +60,7 @@ struct EditView: View {
                     CalendarView2(currentDate: $currentDate)
                         .environmentObject(viewModel)
                         .padding()
-                        .background(hexToColor(hex: viewModel.selectedHabit!.color).opacity(0.03))
+                        .background(hexToColor(hex: viewModel.selectedHabit!.color).opacity(0.1))
                         .clipShape(RoundedRectangle(cornerRadius: 16))
                         .overlay(
                             RoundedRectangle(cornerRadius: 16)
